@@ -1,9 +1,5 @@
 namespace AzureDocumentAI_DotNet.Models;
 
-/// <summary>
-/// Azure credentials and endpoints. Read from configuration, so environment variables
-/// and .NET User Secrets (in Development) both work. Never log these values.
-/// </summary>
 public sealed record AzureSettings(
     Uri DocumentIntelligenceEndpoint,
     string DocumentIntelligenceKey,
@@ -43,7 +39,6 @@ public sealed record AzureSettings(
             ? uri
             : throw new InvalidOperationException($"{name} must be an absolute https:// URL.");
 
-    // Keys are excluded so the record can never print secrets by accident.
     public override string ToString() =>
         $"AzureSettings {{ DocumentIntelligenceEndpoint = {DocumentIntelligenceEndpoint}, OpenAiEndpoint = {OpenAiEndpoint}, OpenAiDeployment = {OpenAiDeployment} }}";
 }

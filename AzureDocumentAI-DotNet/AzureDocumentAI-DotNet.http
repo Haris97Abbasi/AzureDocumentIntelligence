@@ -1,6 +1,13 @@
 @AzureDocumentAI_DotNet_HostAddress = http://localhost:5004
 
-GET {{AzureDocumentAI_DotNet_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{AzureDocumentAI_DotNet_HostAddress}}/api/documents/analyze
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="invoice.pdf"
+Content-Type: application/pdf
+
+< ./samples/invoice.pdf
+--boundary--
 
 ###
