@@ -61,6 +61,18 @@ app.MapPost("/api/documents/analyze", async (
             logger.LogWarning("Azure OpenAI request failed: HTTP {Status}", ex.Status);
             return AzureFailure(ex.Status, errorCode: null);
         }
+        catch (AggregateException ex) when (ex.InnerExceptions.All(inner => inner is RequestFailedException))
+        {
+            logger.LogWarning("Azure service unreachable after retries");
+            return Results.Problem(
+                "Could not reach the Azure service after several retries. Check the endpoint URL and your network connection.",
+                statusCode: StatusCodes.Status502BadGateway);
+        }
+        catch (TimeoutException ex)
+        {
+            logger.LogWarning("Azure request timed out");
+            return Results.Problem(ex.Message, statusCode: StatusCodes.Status504GatewayTimeout);
+        }
     })
     .WithName("AnalyzeDocument")
     .WithSummary("Upload one PDF (max 10 MB) to extract text, tables and key-value pairs, then normalize them with Azure OpenAI.")
@@ -68,6 +80,7 @@ app.MapPost("/api/documents/analyze", async (
     .Produces<DocumentAnalysisResponse>()
     .ProducesProblem(StatusCodes.Status400BadRequest)
     .ProducesProblem(StatusCodes.Status502BadGateway)
+    .ProducesProblem(StatusCodes.Status504GatewayTimeout)
     .DisableAntiforgery();
 
 app.Run();
