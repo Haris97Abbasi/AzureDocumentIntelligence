@@ -68,6 +68,13 @@ app.MapPost("/api/documents/analyze", async (
                 "Could not reach the Azure service after several retries. Check the endpoint URL and your network connection.",
                 statusCode: StatusCodes.Status502BadGateway);
         }
+        catch (HttpRequestException)
+        {
+            logger.LogWarning("Azure service unreachable");
+            return Results.Problem(
+                "Could not reach the Azure service. Check the endpoint URL and your network connection.",
+                statusCode: StatusCodes.Status502BadGateway);
+        }
         catch (TimeoutException ex)
         {
             logger.LogWarning("Azure request timed out");
