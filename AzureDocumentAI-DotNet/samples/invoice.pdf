@@ -1,0 +1,98 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2668 >>
+stream
+0.5 w
+BT /F2 22 Tf 50 790 Td (INVOICE) Tj ET
+BT /F2 11 Tf 50 765 Td (Northwind Office Supplies Ltd.) Tj ET
+BT /F1 10 Tf 50 751 Td (12 Harbour Road, Bristol BS1 4AA, United Kingdom) Tj ET
+BT /F1 10 Tf 50 737 Td (VAT No: GB123456789) Tj ET
+BT /F2 10 Tf 380 790 Td (Invoice No:) Tj ET
+BT /F1 10 Tf 460 790 Td (INV-2026-0147) Tj ET
+BT /F2 10 Tf 380 776 Td (Invoice Date:) Tj ET
+BT /F1 10 Tf 460 776 Td (15 October 2026) Tj ET
+BT /F2 10 Tf 380 762 Td (Due Date:) Tj ET
+BT /F1 10 Tf 460 762 Td (14 November 2026) Tj ET
+BT /F2 10 Tf 380 748 Td (PO Number:) Tj ET
+BT /F1 10 Tf 460 748 Td (PO-88231) Tj ET
+BT /F2 11 Tf 50 705 Td (Bill To:) Tj ET
+BT /F1 10 Tf 50 691 Td (Contoso Manufacturing GmbH) Tj ET
+BT /F1 10 Tf 50 677 Td (Attn: Accounts Payable) Tj ET
+BT /F1 10 Tf 50 663 Td (Industriestrasse 5, 70173 Stuttgart, Germany) Tj ET
+50 630 m 545 630 l S
+50 608 m 545 608 l S
+50 586 m 545 586 l S
+50 564 m 545 564 l S
+50 542 m 545 542 l S
+50 520 m 545 520 l S
+50 630 m 50 520 l S
+90 630 m 90 520 l S
+300 630 m 300 520 l S
+360 630 m 360 520 l S
+450 630 m 450 520 l S
+545 630 m 545 520 l S
+BT /F2 10 Tf 55 615 Td (#) Tj ET
+BT /F2 10 Tf 95 615 Td (Description) Tj ET
+BT /F2 10 Tf 305 615 Td (Qty) Tj ET
+BT /F2 10 Tf 365 615 Td (Unit Price) Tj ET
+BT /F2 10 Tf 455 615 Td (Amount) Tj ET
+BT /F1 10 Tf 55 593 Td (1) Tj ET
+BT /F1 10 Tf 95 593 Td (A4 Copy Paper \(box of 5 reams\)) Tj ET
+BT /F1 10 Tf 305 593 Td (20) Tj ET
+BT /F1 10 Tf 365 593 Td (GBP 24.50) Tj ET
+BT /F1 10 Tf 455 593 Td (GBP 490.00) Tj ET
+BT /F1 10 Tf 55 571 Td (2) Tj ET
+BT /F1 10 Tf 95 571 Td (Ergonomic Office Chair) Tj ET
+BT /F1 10 Tf 305 571 Td (4) Tj ET
+BT /F1 10 Tf 365 571 Td (GBP 189.00) Tj ET
+BT /F1 10 Tf 455 571 Td (GBP 756.00) Tj ET
+BT /F1 10 Tf 55 549 Td (3) Tj ET
+BT /F1 10 Tf 95 549 Td (Wireless Keyboard and Mouse Set) Tj ET
+BT /F1 10 Tf 305 549 Td (10) Tj ET
+BT /F1 10 Tf 365 549 Td (GBP 39.99) Tj ET
+BT /F1 10 Tf 455 549 Td (GBP 399.90) Tj ET
+BT /F1 10 Tf 55 527 Td (4) Tj ET
+BT /F1 10 Tf 95 527 Td (Whiteboard Markers \(pack of 12\)) Tj ET
+BT /F1 10 Tf 305 527 Td (15) Tj ET
+BT /F1 10 Tf 365 527 Td (GBP 8.75) Tj ET
+BT /F1 10 Tf 455 527 Td (GBP 131.25) Tj ET
+BT /F2 10 Tf 360 490 Td (Subtotal:) Tj ET
+BT /F1 10 Tf 455 490 Td (GBP 1,777.15) Tj ET
+BT /F2 10 Tf 360 474 Td (VAT \(20%\):) Tj ET
+BT /F1 10 Tf 455 474 Td (GBP 355.43) Tj ET
+BT /F2 10 Tf 360 458 Td (Total Due:) Tj ET
+BT /F2 10 Tf 455 458 Td (GBP 2,132.58) Tj ET
+BT /F2 10 Tf 50 422 Td (Payment Terms: Net 30) Tj ET
+BT /F1 10 Tf 50 406 Td (Bank: Example Bank plc, Sort Code 00-00-00, Account 00000000 \(sample only\)) Tj ET
+BT /F1 8 Tf 50 60 Td (This is a synthetic sample invoice for testing. All names and numbers are fictitious.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002971 00000 n 
+0000003068 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3170
+%%EOF
