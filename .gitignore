@@ -399,3 +399,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Task brief and local plan (not part of the project)
+Azure_Document_AI_DotNet_Claude_Code_Task.pdf
+plan.md
