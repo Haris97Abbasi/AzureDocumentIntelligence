@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace AzureDocumentAI_DotNet.Models;
 
@@ -16,4 +17,8 @@ public sealed record ExtractedTable(int RowCount, int ColumnCount, IReadOnlyList
 
 public sealed record ExtractedKeyValuePair(string Key, string? Value, float? Confidence);
 
-public sealed record AiNormalizedResult(bool Success, JsonElement? Data, string? Error, string? RawResponse);
+public sealed record AiNormalizedResult(
+    bool Success,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] JsonElement? Data,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] string? Error,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] string? RawResponse);
