@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>AzureDocumentAI_DotNet</RootNamespace>
+    <UserSecretsId>33cbfd28-0c3c-4745-91af-abd74e19e99d</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

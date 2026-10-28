@@ -403,3 +403,6 @@ FodyWeavers.xsd
 # Task brief and local plan (not part of the project)
 Azure_Document_AI_DotNet_Claude_Code_Task.pdf
 plan.md
+
+# Local secrets
+.env

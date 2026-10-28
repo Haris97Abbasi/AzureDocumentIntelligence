@@ -1,4 +1,9 @@
+using AzureDocumentAI_DotNet.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Fail fast with a clear message if any Azure setting is missing.
+builder.Services.AddSingleton(AzureSettings.Load(builder.Configuration));
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
